@@ -56,7 +56,7 @@ def get_integer_from(bool_array: List[bool]) -> int:
     bool_array (List[bool]): bool[MAX_BIT_LENGTH]
 
     [Returns]\n
-    int: integer representation.    
+    int: integer representation.
     """
     return_value = 0
     for i in range(0, MAX_BIT_LENGTH - 1):
