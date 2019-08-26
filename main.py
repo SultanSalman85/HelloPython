@@ -1,2 +1,33 @@
-name = 'Kresna'
-print('Hello World! My name is {}'.format(name))
+import binary_utilities.bin_utility as bu
+import binary_utilities.bin_sum as bs
+import json
+import os
+
+# Get Input
+os.system('clear')
+(number0, binary0) = bu.get_user_number_input("Please input the 1st number:")
+(number1, binary1) = bu.get_user_number_input("Please input the 2nd number:")
+
+# Arithmetic SUM
+print("Arithmetic SUM: {} + {}".format(number0, number1))
+print("Normal result is {}".format(number0 + number1))
+print("Binary result is {}".format(bs.sum_two_number(number0, number1)))
+print()
+
+# Arithmetic SUB
+print("Arithmetic SUB: {} - {}".format(number0, number1))
+print("Normal result is {}".format(number0 - number1))
+print("Binary result is {}".format(0))  # Not Yet Implemented
+print()
+
+# Arithmetic MUL
+print("Arithmetic MUL: {} * {}".format(number0, number1))
+print("Normal result is {}".format(number0 * number1))
+print("Binary result is {}".format(0))  # Not Yet Implemented
+print()
+
+# Arithmetic DIV
+print("Arithmetic DIV: {} / {}".format(number0, number1))
+print("Normal result is {}".format(number0 / number1))
+print("Binary result is {}".format(0))  # Not Yet Implemented
+print()
