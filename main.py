@@ -1,5 +1,8 @@
 import binary_utilities.bin_utility as bu
 import binary_utilities.bin_sum as bs
+import binary_utilities.bin_sub as bsb
+import binary_utilities.bin_mul as bm
+import binary_utilities.bin_div as bd
 import json
 import os
 
@@ -17,17 +20,17 @@ print()
 # Arithmetic SUB
 print("Arithmetic SUB: {} - {}".format(number0, number1))
 print("Normal result is {}".format(number0 - number1))
-print("Binary result is {}".format(0))  # Not Yet Implemented
+print("Binary result is {}".format(bsb.subtract_two_number(number0, number1)))  # Implemented test
 print()
 
 # Arithmetic MUL
 print("Arithmetic MUL: {} * {}".format(number0, number1))
 print("Normal result is {}".format(number0 * number1))
-print("Binary result is {}".format(0))  # Not Yet Implemented
+print("Binary result is {}".format(bm.multiple_two_number(number0, number1)))  # Implemented test
 print()
 
 # Arithmetic DIV
 print("Arithmetic DIV: {} / {}".format(number0, number1))
 print("Normal result is {}".format(number0 / number1))
-print("Binary result is {}".format(0))  # Not Yet Implemented
+print("Binary result is {}".format(bd.divide_two_number(number0,number1)))  # Implemented test
 print()
